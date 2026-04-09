@@ -1,0 +1,729 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE1",
+        "arn": "arn:aws:iam::471923845612:user/dana.chen",
+        "accountId": "471923845612",
+        "userName": "dana.chen"
+      },
+      "eventTime": "2026-03-31T14:22:08Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.33",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "additionalEventData": {"MFAUsed": "Yes", "LoginTo": "https://console.aws.amazon.com/console/home"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-03-31T15:03:44Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"instancesSet": {}, "filterSet": {}},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-03-31T15:05:12Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeSecurityGroups",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"securityGroupSet": {}, "filterSet": {}},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE3",
+        "arn": "arn:aws:iam::471923845612:user/marcus.webb",
+        "accountId": "471923845612",
+        "userName": "marcus.webb"
+      },
+      "eventTime": "2026-03-31T16:11:03Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.45",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": null,
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC1",
+        "arn": "arn:aws:iam::471923845612:user/svc-backup-agent",
+        "accountId": "471923845612",
+        "userName": "svc-backup-agent"
+      },
+      "eventTime": "2026-03-31T02:00:01Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.47",
+      "userAgent": "aws-sdk-python/1.26.0",
+      "requestParameters": {"bucketName": "cloudvault-backups", "key": "daily/2026-03-30-db-backup.sql.gz"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC1",
+        "arn": "arn:aws:iam::471923845612:user/svc-backup-agent",
+        "accountId": "471923845612",
+        "userName": "svc-backup-agent"
+      },
+      "eventTime": "2026-03-31T02:00:18Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.47",
+      "userAgent": "aws-sdk-python/1.26.0",
+      "requestParameters": {"bucketName": "cloudvault-backups", "key": "daily/2026-03-31-db-backup.sql.gz"},
+      "responseElements": {"x-amz-server-side-encryption": "AES256"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC2",
+        "arn": "arn:aws:iam::471923845612:user/svc-report-gen",
+        "accountId": "471923845612",
+        "userName": "svc-report-gen"
+      },
+      "eventTime": "2026-03-31T03:17:42Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.2.15",
+      "userAgent": "aws-sdk-nodejs/3.400.0",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "reports/q1-2026/portfolio-summary.pdf"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC2",
+        "arn": "arn:aws:iam::471923845612:user/svc-report-gen",
+        "accountId": "471923845612",
+        "userName": "svc-report-gen"
+      },
+      "eventTime": "2026-04-01T03:17:38Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.2.15",
+      "userAgent": "aws-sdk-nodejs/3.400.0",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "reports/q1-2026/client-holdings-export.csv"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC2",
+        "arn": "arn:aws:iam::471923845612:user/svc-report-gen",
+        "accountId": "471923845612",
+        "userName": "svc-report-gen"
+      },
+      "eventTime": "2026-04-02T03:17:44Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.2.15",
+      "userAgent": "aws-sdk-nodejs/3.400.0",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "reports/q1-2026/fee-schedule-update.xlsx"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-04-01T09:15:33Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "RunInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {"instanceType": "t3.small", "instancesSet": {"items": [{"imageId": "ami-0c55b159cbfafe1f0"}]}},
+      "responseElements": {"instancesSet": {"items": [{"instanceId": "i-0a1b2c3d4e5f67890", "instanceType": "t3.small"}]}}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE4",
+        "arn": "arn:aws:iam::471923845612:user/james.park",
+        "accountId": "471923845612",
+        "userName": "james.park"
+      },
+      "eventTime": "2026-04-01T10:42:17Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.92",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "additionalEventData": {"MFAUsed": "No", "LoginTo": "https://console.aws.amazon.com/console/home"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-04-01T11:30:05Z",
+      "eventSource": "lambda.amazonaws.com",
+      "eventName": "UpdateFunctionConfiguration",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"functionName": "cloudvault-report-generator", "timeout": 300, "memorySize": 512},
+      "responseElements": {"functionName": "cloudvault-report-generator", "lastModified": "2026-04-01T11:30:05.000+0000"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE3",
+        "arn": "arn:aws:iam::471923845612:user/marcus.webb",
+        "accountId": "471923845612",
+        "userName": "marcus.webb"
+      },
+      "eventTime": "2026-04-01T13:22:41Z",
+      "eventSource": "guardduty.amazonaws.com",
+      "eventName": "ListFindings",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.45",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {"detectorId": "e80fbb4d783f4f9c"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE5",
+        "arn": "arn:aws:iam::471923845612:user/dev-contractor-01",
+        "accountId": "471923845612",
+        "userName": "dev-contractor-01"
+      },
+      "eventTime": "2026-04-01T20:15:33Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "AuthorizeSecurityGroupIngress",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {
+        "groupId": "sg-0a1b2c3d4e5f6dev",
+        "ipPermissions": {"items": [{"ipProtocol": "tcp", "fromPort": 3389, "toPort": 3389, "ipRanges": {"items": [{"cidrIp": "0.0.0.0/0"}]}}]}
+      },
+      "responseElements": {"_return": true}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "471923845612",
+        "arn": "arn:aws:iam::471923845612:root",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-02T23:42:18Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "185.220.101.34",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "additionalEventData": {"MFAUsed": "No", "LoginTo": "https://console.aws.amazon.com/console/home"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "471923845612",
+        "arn": "arn:aws:iam::471923845612:root",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-02T23:43:01Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "CreateAccessKey",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "185.220.101.34",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {"userName": "root"},
+      "responseElements": {"accessKey": {"accessKeyId": "AKIAEXAMPLE99999", "status": "Active", "userName": "root"}}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "471923845612",
+        "arn": "arn:aws:iam::471923845612:root",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-02T23:44:22Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListUsers",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "185.220.101.34",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": null,
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE1",
+        "arn": "arn:aws:iam::471923845612:user/dana.chen",
+        "accountId": "471923845612",
+        "userName": "dana.chen"
+      },
+      "eventTime": "2026-04-02T09:05:11Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.33",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "additionalEventData": {"MFAUsed": "Yes", "LoginTo": "https://console.aws.amazon.com/console/home"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-04-02T10:18:44Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutBucketPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"bucketName": "cloudvault-app-assets", "bucketPolicy": {"Version": "2012-10-17", "Statement": [{"Sid": "PublicRead", "Effect": "Allow", "Principal": "*", "Action": "s3:GetObject", "Resource": "arn:aws:s3:::cloudvault-app-assets/*"}]}},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE6",
+        "arn": "arn:aws:iam::471923845612:user/intern-2026",
+        "accountId": "471923845612",
+        "userName": "intern-2026"
+      },
+      "eventTime": "2026-04-02T14:33:09Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.101",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Failure"},
+      "additionalEventData": {"MFAUsed": "No", "LoginTo": "https://console.aws.amazon.com/console/home"},
+      "errorMessage": "Failed authentication"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE6",
+        "arn": "arn:aws:iam::471923845612:user/intern-2026",
+        "accountId": "471923845612",
+        "userName": "intern-2026"
+      },
+      "eventTime": "2026-04-02T14:33:47Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.101",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Failure"},
+      "additionalEventData": {"MFAUsed": "No", "LoginTo": "https://console.aws.amazon.com/console/home"},
+      "errorMessage": "Failed authentication"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE6",
+        "arn": "arn:aws:iam::471923845612:user/intern-2026",
+        "accountId": "471923845612",
+        "userName": "intern-2026"
+      },
+      "eventTime": "2026-04-02T14:34:22Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.101",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "additionalEventData": {"MFAUsed": "No", "LoginTo": "https://console.aws.amazon.com/console/home"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC1",
+        "arn": "arn:aws:iam::471923845612:user/svc-backup-agent",
+        "accountId": "471923845612",
+        "userName": "svc-backup-agent"
+      },
+      "eventTime": "2026-04-02T02:00:03Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.47",
+      "userAgent": "aws-sdk-python/1.26.0",
+      "requestParameters": {"bucketName": "cloudvault-backups", "key": "daily/2026-04-02-db-backup.sql.gz"},
+      "responseElements": {"x-amz-server-side-encryption": "AES256"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-04-03T08:45:22Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "DescribeInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"instancesSet": {}, "filterSet": {}},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE7",
+        "arn": "arn:aws:iam::471923845612:user/svc-deploy-pipeline",
+        "accountId": "471923845612",
+        "userName": "svc-deploy-pipeline"
+      },
+      "eventTime": "2026-04-03T06:00:01Z",
+      "eventSource": "ecs.amazonaws.com",
+      "eventName": "UpdateService",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.22",
+      "userAgent": "aws-sdk-go/1.44.0",
+      "requestParameters": {"cluster": "cloudvault-prod", "service": "web-api", "desiredCount": 2},
+      "responseElements": {"service": {"serviceName": "web-api", "desiredCount": 2, "runningCount": 2}}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-04-03T10:12:55Z",
+      "eventSource": "rds.amazonaws.com",
+      "eventName": "DescribeDBInstances",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE1",
+        "arn": "arn:aws:iam::471923845612:user/dana.chen",
+        "accountId": "471923845612",
+        "userName": "dana.chen"
+      },
+      "eventTime": "2026-04-03T14:00:08Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListUsers",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.33",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": null,
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE1",
+        "arn": "arn:aws:iam::471923845612:user/dana.chen",
+        "accountId": "471923845612",
+        "userName": "dana.chen"
+      },
+      "eventTime": "2026-04-03T14:02:31Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAccessKeys",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.33",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {"userName": "svc-backup-agent"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC2",
+        "arn": "arn:aws:iam::471923845612:user/svc-report-gen",
+        "accountId": "471923845612",
+        "userName": "svc-report-gen"
+      },
+      "eventTime": "2026-04-03T03:17:39Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.2.15",
+      "userAgent": "aws-sdk-nodejs/3.400.0",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "reports/q1-2026/monthly-performance.pdf"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE5",
+        "arn": "arn:aws:iam::471923845612:user/dev-contractor-01",
+        "accountId": "471923845612",
+        "userName": "dev-contractor-01"
+      },
+      "eventTime": "2026-04-03T19:45:12Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "ListBuckets",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": null,
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE5",
+        "arn": "arn:aws:iam::471923845612:user/dev-contractor-01",
+        "accountId": "471923845612",
+        "userName": "dev-contractor-01"
+      },
+      "eventTime": "2026-04-03T19:46:03Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"bucketName": "cloudvault-client-docs"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE5",
+        "arn": "arn:aws:iam::471923845612:user/dev-contractor-01",
+        "accountId": "471923845612",
+        "userName": "dev-contractor-01"
+      },
+      "eventTime": "2026-04-03T19:47:15Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "ListAttachedUserPolicies",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"userName": "dev-contractor-01"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAEXAMPLE8:dev-contractor-01-session",
+        "arn": "arn:aws:sts::471923845612:assumed-role/CloudVaultAdminRole/dev-contractor-01-session",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-03T19:48:33Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"roleArn": "arn:aws:iam::471923845612:role/CloudVaultAdminRole", "roleSessionName": "dev-contractor-01-session"},
+      "responseElements": {"credentials": {"accessKeyId": "ASIAEXAMPLE77777", "expiration": "2026-04-04T01:48:33Z"}}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAEXAMPLE8:dev-contractor-01-session",
+        "arn": "arn:aws:sts::471923845612:assumed-role/CloudVaultAdminRole/dev-contractor-01-session",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-03T19:50:44Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "clients/peterson-trust/2026-q1-statement.pdf"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAEXAMPLE8:dev-contractor-01-session",
+        "arn": "arn:aws:sts::471923845612:assumed-role/CloudVaultAdminRole/dev-contractor-01-session",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-03T19:51:02Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "clients/peterson-trust/portfolio-detail.csv"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAEXAMPLE8:dev-contractor-01-session",
+        "arn": "arn:aws:sts::471923845612:assumed-role/CloudVaultAdminRole/dev-contractor-01-session",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-03T19:51:18Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "clients/morrison-family/tax-documents-2025.pdf"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "AROAEXAMPLE8:dev-contractor-01-session",
+        "arn": "arn:aws:sts::471923845612:assumed-role/CloudVaultAdminRole/dev-contractor-01-session",
+        "accountId": "471923845612"
+      },
+      "eventTime": "2026-04-03T19:51:34Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "104.28.55.201",
+      "userAgent": "aws-cli/2.15.0 Python/3.11.6",
+      "requestParameters": {"bucketName": "cloudvault-client-docs", "key": "clients/chen-holdings/investment-strategy-2026.pdf"},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE3",
+        "arn": "arn:aws:iam::471923845612:user/marcus.webb",
+        "accountId": "471923845612",
+        "userName": "marcus.webb"
+      },
+      "eventTime": "2026-04-04T08:30:15Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.45",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "additionalEventData": {"MFAUsed": "Yes", "LoginTo": "https://console.aws.amazon.com/console/home"}
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLE2",
+        "arn": "arn:aws:iam::471923845612:user/priya.sharma",
+        "accountId": "471923845612",
+        "userName": "priya.sharma"
+      },
+      "eventTime": "2026-04-04T09:15:33Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "DescribeTrails",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "98.45.172.88",
+      "userAgent": "console.amazonaws.com",
+      "requestParameters": {},
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJK3EXAMPLESVC1",
+        "arn": "arn:aws:iam::471923845612:user/svc-backup-agent",
+        "accountId": "471923845612",
+        "userName": "svc-backup-agent"
+      },
+      "eventTime": "2026-04-04T02:00:05Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "10.0.1.47",
+      "userAgent": "aws-sdk-python/1.26.0",
+      "requestParameters": {"bucketName": "cloudvault-backups", "key": "daily/2026-04-04-db-backup.sql.gz"},
+      "responseElements": {"x-amz-server-side-encryption": "AES256"}
+    }
+  ]
+}
