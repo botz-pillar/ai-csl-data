@@ -1,7 +1,3 @@
-# Priya's proposed S3 bucket configurations
-# She's trying to fix the public access issue on app-assets
-# while keeping client-docs locked down
-
 resource "aws_s3_bucket" "client_docs" {
   bucket = "cloudvault-client-docs"
 
@@ -21,9 +17,6 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "client_docs" {
     }
   }
 }
-
-# NOTE: No bucket policy here — relying on default deny
-# Is that sufficient for a bucket with PII and financial data?
 
 resource "aws_s3_bucket" "app_assets" {
   bucket = "cloudvault-app-assets"
@@ -52,7 +45,6 @@ resource "aws_s3_bucket_policy" "app_assets_public" {
   })
 }
 
-# Backup bucket
 resource "aws_s3_bucket" "backups" {
   bucket = "cloudvault-backups"
 
@@ -69,7 +61,3 @@ resource "aws_s3_bucket_versioning" "backups" {
     status = "Enabled"
   }
 }
-
-# NOTE: svc-backup-agent has s3:* permissions on all buckets
-# Priya says "it needs full access to do backups"
-# Is that true?

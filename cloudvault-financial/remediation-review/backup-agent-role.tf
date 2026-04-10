@@ -1,6 +1,3 @@
-# Priya's proposed IAM role for the backup agent
-# Replacing the overpermissioned svc-backup-agent IAM user
-
 resource "aws_iam_role" "backup_agent" {
   name = "cloudvault-backup-agent"
 
@@ -49,7 +46,3 @@ resource "aws_iam_role_policy" "backup_agent_s3" {
     ]
   })
 }
-
-# Question: Should the backup agent really have access to client-docs?
-# It only needs to backup the database, which goes to cloudvault-backups.
-# Why does it also have access to client documents?
