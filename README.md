@@ -19,12 +19,17 @@ Your job: find the problems, fix them, and build the security program — using 
 ```
 ai-csl-data/
 ├── cloudvault-financial/
-│   ├── company-profile.md          # Client briefing — read this first
-│   ├── cloudtrail-week1.json       # Week 1 CloudTrail logs (Course 1, 2)
-│   ├── guardduty-findings.json     # 47 GuardDuty findings (Course 2)     [coming soon]
-│   ├── soc2-compliance-tracker.csv # 200 SOC 2 controls (Course 2, 7)     [coming soon]
-│   ├── incident-sequence.json      # Full attack chain data (Course 2, 5) [coming soon]
-│   └── vendor-questionnaire.csv    # Vendor security review (Course 2)    [coming soon]
+│   ├── company-profile.md                    # Client briefing — read this first
+│   ├── cloudtrail-week1.json                 # Week 1 CloudTrail logs (Course 1)
+│   ├── guardduty-findings-month1.json        # 47 GuardDuty findings (Course 2)
+│   ├── soc2-compliance-tracker.csv           # 200 SOC 2 controls (Course 2, 7)
+│   ├── vendor-questionnaire.md               # 50-question vendor security review (Course 2)
+│   ├── remediation-review/                   # Code review exercise files (Course 2)
+│   │   ├── security-group-fix.tf             # Priya's SG remediation (has issues)
+│   │   ├── iam-contractor-policy.json        # Contractor IAM policy (overpermissioned)
+│   │   ├── s3-bucket-policy.tf               # S3 bucket configs (missing controls)
+│   │   └── backup-agent-role.tf              # Backup agent IAM role (scoping issues)
+│   └── incident-sequence.json                # Full attack chain (Course 2, 5)  [coming soon]
 └── README.md
 ```
 

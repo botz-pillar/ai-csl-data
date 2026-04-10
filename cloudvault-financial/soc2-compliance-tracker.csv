@@ -1,0 +1,55 @@
+Control ID,Domain,Requirement,Status,Evidence Reference,Last Reviewed,Owner,Notes
+CC1.1,Control Environment,"Management demonstrates commitment to integrity and ethical values",Compliant,"Employee handbook, Code of conduct",2026-01-15,Dana Chen,Annual review completed
+CC1.2,Control Environment,"Board exercises oversight responsibility",Gap,,Never,Dana Chen,No formal board security oversight documented
+CC1.3,Control Environment,"Management establishes structure and authority",Compliant,"Org chart, role descriptions",2026-01-15,Dana Chen,
+CC1.4,Control Environment,"Organization demonstrates commitment to competence",Unknown,,,Dana Chen,Need to document training requirements
+CC1.5,Control Environment,"Organization enforces accountability",Unknown,,,Dana Chen,Need formal performance review process for security roles
+CC2.1,Communication & Information,"Organization obtains relevant information",Unknown,,,Marcus Webb,No formal threat intelligence process
+CC2.2,Communication & Information,"Organization communicates internally",Compliant,"Slack channels, weekly standup notes",2026-02-01,Dana Chen,
+CC2.3,Communication & Information,"Organization communicates externally",Gap,,Never,Dana Chen,No external communication policy for security incidents
+CC3.1,Risk Assessment,"Organization specifies objectives clearly",Unknown,,,Dana Chen,No formal risk assessment framework
+CC3.2,Risk Assessment,"Organization identifies and analyzes risks",Gap,,Never,Dana Chen,No risk register exists
+CC3.3,Risk Assessment,"Organization considers potential for fraud",Unknown,,,Dana Chen,
+CC3.4,Risk Assessment,"Organization identifies and assesses changes",Unknown,,,Dana Chen,No change risk assessment process
+CC4.1,Monitoring,"Organization selects and develops monitoring activities",Gap,,Never,Marcus Webb,GuardDuty enabled but not monitored. No SIEM.
+CC4.2,Monitoring,"Organization evaluates and communicates deficiencies",Gap,,Never,Marcus Webb,No process to escalate monitoring findings
+CC5.1,Control Activities,"Organization selects control activities",Unknown,,,Rachel Torres,Controls not formally documented
+CC5.2,Control Activities,"Organization selects technology controls",Gap,,Never,Rachel Torres,No formal technology control selection process
+CC5.3,Control Activities,"Organization deploys through policies and procedures",Gap,,Never,Rachel Torres,Policies exist but are outdated and incomplete
+CC6.1,Logical & Physical Access,"Organization implements logical access security",Gap,,,Rachel Torres,No centralized access management. IAM permissions are ad-hoc.
+CC6.2,Logical & Physical Access,"Organization manages credentials",Gap,,,Rachel Torres,"MFA not enforced for all users. Root account has no MFA. 4 IAM users without MFA."
+CC6.3,Logical & Physical Access,"Organization manages access through provisioning",Gap,,,Rachel Torres,No formal user provisioning or deprovisioning process. Contractor accounts persist after engagement.
+CC6.4,Logical & Physical Access,"Organization restricts physical access",Compliant,"Office access logs, badge system records",2026-01-15,Dana Chen,AWS managed physical security for cloud.
+CC6.5,Logical & Physical Access,"Organization disposes of and protects assets",Unknown,,,Rachel Torres,No asset disposal procedures documented
+CC6.6,Logical & Physical Access,"Organization implements controls against threats",Gap,,,Marcus Webb,"No SIEM, no automated response, no centralized alerting"
+CC6.7,Logical & Physical Access,"Organization restricts data transmission",Unknown,,,Rachel Torres,Encryption in transit exists (TLS) but not formally documented
+CC6.8,Logical & Physical Access,"Organization prevents unauthorized software",Unknown,,,Priya Sharma,No software allowlisting or MDM for endpoints
+CC7.1,System Operations,"Organization detects and monitors changes",Gap,,,Marcus Webb,"CloudTrail enabled but logs not reviewed. No file integrity monitoring."
+CC7.2,System Operations,"Organization monitors system components",Gap,,,Marcus Webb,"GuardDuty findings unreviewed for 6 months. No centralized monitoring."
+CC7.3,System Operations,"Organization evaluates security events",Gap,,,Marcus Webb,No incident classification or triage process
+CC7.4,System Operations,"Organization implements incident response",Gap,,,Dana Chen,"No documented incident response plan. Response is ad-hoc."
+CC7.5,System Operations,"Organization identifies and remediates vulnerabilities",Gap,,,Marcus Webb,No vulnerability scanning. No patch management process.
+CC8.1,Change Management,"Organization manages changes to infrastructure",Gap,,,Priya Sharma,"Terraform used but no formal change approval process. No peer review required."
+CC9.1,Risk Mitigation,"Organization identifies and assesses vendor risk",Gap,,,Rachel Torres,No vendor risk management program. No vendor security questionnaire process.
+CC9.2,Risk Mitigation,"Organization assesses vendor compliance",Gap,,,Rachel Torres,No vendor compliance review process
+A1.1,Availability,"Organization maintains availability commitments",Unknown,,,Priya Sharma,No SLA documentation
+A1.2,Availability,"Organization plans for recovery",Gap,,,Priya Sharma,"RDS Multi-AZ configured but no DR plan documented. No backup testing."
+A1.3,Availability,"Organization tests recovery",Gap,,,Priya Sharma,Backups exist but have never been tested for restoration
+C1.1,Confidentiality,"Organization identifies confidential information",Gap,,,Rachel Torres,No data classification policy. Client financial data not formally classified.
+C1.2,Confidentiality,"Organization disposes of confidential information",Gap,,,Rachel Torres,No data retention or disposal policy
+PI1.1,Processing Integrity,"Organization achieves processing objectives",Compliant,"Application monitoring, error logs",2026-03-01,James Park,
+PI1.2,Processing Integrity,"Organization implements quality assurance",Compliant,"CI/CD pipeline, automated tests",2026-03-01,James Park,
+PI1.3,Processing Integrity,"Organization monitors inputs and outputs",Unknown,,,James Park,
+P1.1,Privacy,"Organization provides notice",Compliant,"Privacy policy on website",2026-02-15,Rachel Torres,
+P1.2,Privacy,"Organization obtains consent",Unknown,,,Rachel Torres,Need to verify consent mechanisms for client data processing
+P2.1,Privacy,"Organization identifies and classifies personal information",Gap,,,Rachel Torres,No PII inventory or data mapping
+P3.1,Privacy,"Organization collects personal information",Unknown,,,Rachel Torres,
+P3.2,Privacy,"Organization uses personal information as described",Unknown,,,Rachel Torres,
+P4.1,Privacy,"Organization disposes of personal information",Gap,,,Rachel Torres,No PII disposal procedures
+P4.2,Privacy,"Organization retains personal information as specified",Gap,,,Rachel Torres,No retention schedule
+P5.1,Privacy,"Organization obtains consent for use of personal information",Unknown,,,Rachel Torres,
+P5.2,Privacy,"Organization manages sharing and disclosure",Unknown,,,Rachel Torres,
+P6.1,Privacy,"Organization provides notice of changes",Compliant,"Privacy policy update log",2026-02-15,Rachel Torres,
+P6.2,Privacy,"Organization provides means to update preferences",Unknown,,,Rachel Torres,
+P7.1,Privacy,"Organization collects information through fair means",Compliant,,2026-02-15,Rachel Torres,
+P8.1,Privacy,"Organization handles complaints",Unknown,,,Rachel Torres,No formal privacy complaint process
