@@ -2,6 +2,8 @@
 
 Real-world security scenarios built for hands-on learning. Deploy tools, analyze threats, and build your portfolio — all AI-augmented.
 
+**Last Updated:** 2026-04-14
+
 ## What's in here
 
 This repo contains the datasets, artifacts, and scenario materials used across the [AI Cloud Security Lab](https://www.skool.com/cloud-security-lab) curriculum.
@@ -30,10 +32,12 @@ ai-csl-data/
 │   │   ├── s3-bucket-policy.tf               # S3 bucket configs (missing controls)
 │   │   └── backup-agent-role.tf              # Backup agent IAM role (scoping issues)
 │   └── incident-sequence.json                # Full attack chain (Course 2, 5)  [coming soon]
+├── notebooklm-sources/                       # Source material for NotebookLM (Course 1 bonus)
+├── CHANGELOG.md                              # Log of dataset additions and updates
 └── README.md
 ```
 
-New datasets are added as courses are released. If you've added this as a submodule (see below), just pull the latest to get new data.
+New datasets are added as courses are released. If you've added this as a submodule (see below), just pull the latest to get new data. **Check `CHANGELOG.md` after each pull** to see what's new.
 
 ## How to use this
 
