@@ -12,18 +12,20 @@ Course 09 Lesson 6 (RAG Over Your Runbooks) corpus.
 
 ## The 10 runbooks
 
-| # | File | Topic | Last updated |
-|---|---|---|---|
-| 1 | `01-iam-access-key-compromise.md` | IAM access key compromise response | 2025-11-04 |
-| 2 | `02-guardduty-critical-finding.md` | GuardDuty HIGH/CRITICAL finding triage | 2026-02-08 |
-| 3 | `03-s3-public-bucket-exposure.md` | S3 public-bucket lockdown | 2026-01-22 |
-| 4 | `04-ec2-imdsv1-detection.md` | EC2 IMDSv1 → IMDSv2 migration | 2026-01-04 |
-| 5 | `05-cloudtrail-tampering-response.md` | CloudTrail stop/delete/modify response | 2026-03-15 |
-| 6 | `06-suspicious-assumerole-investigation.md` | Anomalous AssumeRole triage | 2026-02-19 |
-| 7 | `07-compromised-ec2-isolation.md` | EC2 instance isolation (network + IAM) | 2026-02-26 |
-| 8 | `08-lambda-code-injection-response.md` | Lambda function tampering response | 2026-03-02 |
-| 9 | `09-vpc-flow-log-anomaly.md` | VPC flow log triage **— PLANTED OUTDATED** | 2024-01-15 |
-| 10 | `10-secrets-manager-rotation-anomaly.md` | Unexpected Secrets Manager rotation | 2026-03-08 |
+| File | Topic | Last updated |
+|---|---|---|
+| `iam-access-key-compromise.md` | IAM access key compromise response | 2025-11-04 |
+| `guardduty-critical-finding.md` | GuardDuty HIGH/CRITICAL finding triage | 2026-02-08 |
+| `s3-public-bucket-exposure.md` | S3 public-bucket lockdown | 2026-01-22 |
+| `ec2-imdsv1-detection.md` | EC2 IMDSv1 → IMDSv2 migration | 2026-01-04 |
+| `cloudtrail-tampering-response.md` | CloudTrail stop/delete/modify response | 2026-03-15 |
+| `suspicious-assumerole-investigation.md` | Anomalous AssumeRole triage | 2026-02-19 |
+| `compromised-ec2-isolation.md` | EC2 instance isolation (network + IAM) | 2026-02-26 |
+| `lambda-code-injection-response.md` | Lambda function tampering response | 2026-03-02 |
+| `vpc-flow-log-anomaly.md` | VPC flow log triage **— PLANTED OUTDATED** | 2024-01-15 |
+| `secrets-manager-rotation-anomaly.md` | Unexpected Secrets Manager rotation | 2026-03-08 |
+
+Filenames are semantic, not numbered — adding/removing/reordering runbooks does not ripple through references in lessons or eval suites.
 
 Each runbook follows the same structure: frontmatter (title / last-updated / owner / severity-tier) + sections for *When to use this*, *Prerequisites*, *Procedure*, *Verification*, *Escalation*, *Notes / known gotchas*. Chunking by H2 (the lesson's default chunker) gives clean retrieval units.
 
@@ -35,7 +37,7 @@ L6 Step 1 has students copy the runbooks into their workbench:
 cp lab-data/runbook-search/runbooks/*.md tools/runbook-search/fixtures/runbooks/
 ```
 
-Subsequent steps build the embedding pipeline, the RAG skill with citations, the 20-Q/A eval, and the freshness check. **Runbook 09 contains a planted staleness** — both an old `last-updated` date AND an incorrect AWS CLI flag — that the freshness check + eval should catch (Step 6 of the lesson). See `PLANTED.md` for the answer key.
+Subsequent steps build the embedding pipeline, the RAG skill with citations, the 20-Q/A eval, and the freshness check. **`vpc-flow-log-anomaly.md` contains a planted staleness** — both an old `last-updated` date AND an incorrect AWS CLI flag — that the freshness check + eval should catch (Step 6 of the lesson). See `PLANTED.md` for the answer key.
 
 ## Severity tiers
 
