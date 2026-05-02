@@ -19,7 +19,7 @@ These probe specific facts the corpus must get right.
 }
 ```
 
-This question is the planted-issue catch. The eval will return both the correct answer (from runbook 01) AND the wrong answer (from runbook 09 — `--username`). The student's RAG implementation has to disambiguate (top-k scoring, recency weighting, voting across chunks).
+This question is the planted-issue catch. The eval will return both the correct answer (from `iam-access-key-compromise.md`) AND the wrong answer (from `vpc-flow-log-anomaly.md` — `--username`). The student's RAG implementation has to disambiguate (top-k scoring, recency weighting, voting across chunks).
 
 ---
 
@@ -48,13 +48,13 @@ Probes whether top-k retrieval surfaces the right *graph* of runbooks, not a sin
 ```python
 {
     "question": "If I find that CloudTrail was stopped by a principal, what runbook should I trigger next?",
-    "must_contain": ["runbook 01", "IAM"],
-    "must_cite_chunk_containing": "see runbook 01",
+    "must_contain": ["iam-access-key-compromise", "IAM"],
+    "must_cite_chunk_containing": "iam-access-key-compromise",
     "category": "cross-runbook",
 }
 ```
 
-Tests retrieval over the cross-references runbook 05 makes to runbook 01.
+Tests retrieval over the cross-references `cloudtrail-tampering-response.md` makes to `iam-access-key-compromise.md`.
 
 ---
 
@@ -93,9 +93,9 @@ If your skill answers these confidently, your cosine threshold is too low. The l
 Distribute across the 10 runbooks roughly proportional to their content surface (each runbook has ~6 distinct probe surfaces — when-to-use, prerequisite, CLI/flag, decision rule, verification, escalation). Suggested distribution:
 
 - **Recall (8 questions):** specific CLI flags / commands per runbook (one per runbook, skip the planted runbook — that one's caught by Category 1's question).
-- **Decision criteria (4 questions):** judgment calls from runbooks 02, 03, 06, 10.
-- **Cross-runbook (2 questions):** trigger-graph traversals like the 05→01 example above.
-- **Gotcha (2 questions):** edge cases from the "Notes / known gotchas" sections (the Hyperplane ENI gotcha in 09, the BPA-as-kill-switch in 03).
+- **Decision criteria (4 questions):** judgment calls from `guardduty-critical-finding.md`, `s3-public-bucket-exposure.md`, `suspicious-assumerole-investigation.md`, `secrets-manager-rotation-anomaly.md`.
+- **Cross-runbook (2 questions):** trigger-graph traversals like the `cloudtrail-tampering-response.md` → `iam-access-key-compromise.md` example above.
+- **Gotcha (2 questions):** edge cases from the "Notes / known gotchas" sections (the Hyperplane ENI gotcha in `vpc-flow-log-anomaly.md`, the BPA-as-kill-switch in `s3-public-bucket-exposure.md`).
 - **Refusal (3+ questions):** topics deliberately not covered (RDS, KMS, compliance, SOC 2, etc.).
 
 Total: 19-20.
